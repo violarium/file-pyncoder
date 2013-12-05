@@ -1,4 +1,4 @@
 file-pyncoder
 =============
 
-Small programm for changing file encodings
+Small programme for changing file encodings
