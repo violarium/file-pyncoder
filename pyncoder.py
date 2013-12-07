@@ -1,5 +1,5 @@
-import utils.files
-import utils.filters
+import lib.files
+import lib.filters
 import os
 import sys
 import argparse
@@ -30,7 +30,7 @@ args = parser.parse_args()
 if os.path.isdir(args.target):
     pass
 elif os.path.isfile(args.target):
-    utils.files.change_file_encoding(args.target, args.in_encoding, args.out_encoding, args.keep_backup)
+    lib.files.change_file_encoding(args.target, args.in_encoding, args.out_encoding, args.keep_backup)
     pass
 else:
     print "There are no file or directory '%s'" % args.target
